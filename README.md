@@ -12,9 +12,6 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/QVCI/QVCI/output/snake.svg" alt="Snake animation" />
-
-###
 
 <h3 align="left">Lenguajes:</h3>
 
