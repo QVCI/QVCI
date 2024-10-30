@@ -7,7 +7,7 @@
 <h3 align="left">Contactame por:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/carlo-iván-quezada-venegas-24440b305" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Carlo Iván Quezada Venegas" height="30" width="40" /></a>
-<a href="https://www.facebook.com/profile.php?id=100071200912413&locale=es_LA" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="carlo iván" height="30" width="40" /></a>
+<a href="https://www.facebook.com/profile.php?id=100071200912413" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="carlo iván" height="30" width="40" /></a>
 <a href="https://instagram.com/c4rloi/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="c4rloi" height="30" width="40" /></a>
 </p>
 
