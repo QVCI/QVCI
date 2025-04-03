@@ -1,16 +1,27 @@
-<h1 align="center">Hola Soy Carlo</h1>
+<h1 align="center">Hola, mi nombre es Carlo</h1>
 
 ###
+<p align="center">
+  Soy estudiante de Ingeniería en Inteligencia Artificial en la ESCOM (Escuela Superior de Cómputo) - IPN [2025 - Actualidad].<br>
+  Técnico en Programación por el CECyT 9 “Juan de Dios Bátiz” - IPN [2021 - 2024].<br>
+  Soy un desarrollador apasionado por el backend y el desarrollo de aplicaciones nativas para Android.<br>
+  Utilizo cualquier tipo de tecnología que me permita alcanzar mis objetivos, tales como: Node.js, Spring Boot, Firebase, Jetpack Compose, Material Design (y Symbols), o Jira.<br>
+  Actualmente, mi equipo de trabajo y amigos 
+  <a href="https://github.com/luimstumbad00"><strong>Aguilar Torres Luis</strong></a> y 
+  <a href="https://github.com/orgs/Softux-inc/people/DannyMontano"><strong>Montaño Sánchez Daniela</strong></a> 
+  nos preparamos para el <a href="https://witcom.upiita.ipn.mx"><strong>Witcom 2025</strong></a>, organizado por la UPIITA - IPN.<br>
+  Junto a ellos y al resto de mis amigos 
+  <a href="https://github.com/chaam6"><strong>Gutiérrez López Samuel</strong></a> y 
+  <a href="https://github.com/NeshNolasco"><strong>Nolasco Quezada Neshmi Natalia</strong></a>, 
+  y con el apoyo de nuestro exasesor de tesis, el <strong>M. en C. Reyes Vera Abdiel</strong>, ganamos el 
+  <strong>15.º Premio Nacional de Transporte Urbano y Movilidad 2024</strong> en la categoría de 
+  <strong>Proyecto de Transporte y Movilidad Urbana</strong>.<br>
+  También realizamos un proyecto asociado al CIC (Centro de Investigación en Cómputo) - IPN [Agosto 2024 - Noviembre 2024].<br>
+  Fui asistente y parte del staff en la <strong>2.ª Escuela de Verano de Ciencias Cognitivo-Computacionales y Procesamiento del Lenguaje Natural</strong>, organizada por el CIC.<br>
+  Mi objetivo es seguir creciendo como profesional, aportar al equipo de trabajo y aprender continuamente en el campo laboral, aplicando mi capacidad para trabajar bajo presión y adaptarme a nuevos desafíos.
+</p>
 
-<p align="center">Soy un desarrollador con experiencia en Backend y Frontend, especializado en Java, Python, JavaScript y<br>tecnologías relacionadas como Node.js y Spring Boot. Tengo habilidades en la integración de bases de<br>datos SQL (MySQL) y NoSQL (Firebase Firestore), así como en el desarrollo de aplicaciones móviles con<br>Jetpack Compose. Experto en el uso de herramientas de control de versiones como Git y GitHub, y en la<br>gestión de proyectos con Jira.<br>Actualmente, realice un proyecto asociado al Centro de Investigación de Cómputo del IPN, participando en<br>proyectos de investigación y desarrollando mi propio proyecto. También he sido staff y asistente en la<br>Escuela de Verano de Ciencias Cognitivas Computacionales y Procesamiento del Lenguaje Natural del CIC.<br>Mi objetivo es seguir creciendo como profesional, aportar al equipo de trabajo, y aprender continuamente<br>en el campo laboral, aplicando mi capacidad para trabajar bajo presión y adaptarme a nuevos desafíos.</p>
-
-###
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=QVCI&radius=16&theme=redical&area=true&order=5&hide_border=false&hide_title=false" height="300" alt="activity-graph graph"  />
-</div>
-
-###
+ ###
 
 
 <h3 align="left">Lenguajes:</h3>
@@ -37,7 +48,10 @@
   <img src="https://skillicons.dev/icons?i=css" height="40" alt="css3 logo"  />
 </div>
 
+
+
 ###
+
 
 <h3 align="left">Tecnologías:</h3>
 
@@ -65,6 +79,13 @@
   <img src="https://skillicons.dev/icons?i=bash" height="40" alt="bash logo"  />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=gcp" height="40" alt="googlecloud logo"  />
+</div>
+
+###
+
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=QVCI&radius=16&theme=redical&area=true&order=5&hide_border=false&hide_title=false" height="300" alt="activity-graph graph"  />
 </div>
 
 ###
