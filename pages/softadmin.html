@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoftAdmin - Detalles del Proyecto | Bersamed</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdeveloper9160back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Fixed Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/50 backdrop-blur-sm border-b border-secondary-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0">
+                    <a href="portfolio_landing_page.html" class="text-xl font-semibold text-primary hover:text-primary-700 transition-colors">
+                        Carlo Iván Quezada Venegas
+                    </a>
+                </div>
+
+               <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Acerca de mí</a>
+                        <a href="#skills" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Habilidades</a>
+                        <a href="#experience" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experiencia</a>
+                        <a href="#education" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Estudios y Reconocimientos</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-primary hover:bg-secondary-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path class="inline" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-secondary-200">
+                    <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Acerca de mí</a>
+                    <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Habilidades</a>
+                    <a href="#experience" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Experiencia</a>
+                    <a href="#education" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Estudios </a>
+                    
+                    <a href="contact_collaboration.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="pt-20 pb-4 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center space-x-2 text-sm text-text-secondary">
+                <a href="portfolio_landing_page.html" class="hover:text-primary transition-colors">Inicio</a>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="text-text-primary font-medium">Proyectos</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="text-text-primary font-medium">SoftAdmin</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Project Hero Section -->
+    <section class="py-12 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Main Content -->
+                <div class="lg:col-span-2">
+                    <div class="mb-8">
+                        <h1 class="text-4xl sm:text-5xl font-bold text-text-primary mb-4">SoftAdmin</h1>
+                        <p class="text-xl text-text-secondary mb-6 leading-relaxed">
+                            <b>SoftAdmin</b> es una solución integral 
+                            desarrollada en colaboración con un equipo especializado en el núcleo de negocio de <b>Bersamed</b>, 
+                            una aplicación de escritorio. Su objetivo principal es facilitar la comunicación en tiempo real entre
+                            los distintos equipos de trabajo y ofrecer un seguimiento visual del estado de cada tarea o proyecto.
+                            <br>Tanto entre los equipos de trabajo y los clientes.
+                        </p>
+                        
+                        <!-- Technology Tags -->
+                        <div class="flex flex-wrap gap-3 mb-8">
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">Spring Boot</span>
+                            <span class="skill-badge">Firebase</span>
+                            <span class="skill-badge">Android (Java, Jetpack)</span>
+                            <span class="skill-badge">Angular</span>
+                            <span class="skill-badge">JWT</span>
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-badge">Postman</span>
+                            <span class="skill-badge">API REST</span>
+                            <span class="skill-badge">Server-Sent Events (SSE)</span>
+                            <span class="skill-badge">Firebase Cloud Messaging</span>
+                            <span class="skill-badge">Material Design</span>
+                        </div>
+
+                       
+                    </div>
+
+                    <!-- Featured Image/Demo -->
+                    <div class="relative mb-12">
+                        <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                            <img src="../recurses/logo_softadmin.jpeg" alt="E-Commerce Platform Dashboard" class="w-full h-96 object-cover cursor-pointer hover-lift" loading="lazy" onclick="openLightbox(this.src)" onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg pointer-events-none"></div>
+                    </div>
+                </div>
+
+                <!-- Project Metadata Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="card sticky top-24">
+                        <h3 class="text-lg font-semibold text-text-primary mb-6">Detalles del Proyecto</h3>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Duración</h4>
+                                <p class="text-text-primary">4 meses</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Tamaño del Equipo</h4>
+                                <p class="text-text-primary">8 desarrolladores, divididos en dos equipos de 4 desarrolladores</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Mi Rol</h4>
+                                <p class="text-text-primary">
+                                    Arquitecto de Software. Responsable del desarrollo de los microservicios y del backend para Android. 
+                                    Además, colaboré en el desarrollo del frontend de Android y en el backend de la aplicación web en Angular.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Cliente</h4>
+                                <p class="text-text-primary">Bersamed</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Fecha de finalización</h4>
+                                <p class="text-text-primary">December 2024</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Habilidades Claves Demostradas</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="text-xs bg-primary-100 text-primary px-2 py-1 rounded">Planificación y arquitectura de software</span>
+                                    <span class="text-xs bg-accent-100 text-accent px-2 py-1 rounded">Diseño de API REST</span>
+                                    <span class="text-xs bg-success-100 text-success px-2 py-1 rounded">Desarrollo backend</span>
+                                    <span class="text-xs bg-success-100 text-success px-2 py-1 rounded">Desarrollo Android (Java, Jetpack)</span>
+                                    <span class="text-xs bg-warning-100 text-warning px-2 py-1 rounded">Liderazgo técnico de equipo</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold text-text-primary mb-8">Descripción General del Proyecto</h2>
+                    
+                    <!-- Challenge -->
+                    <div class="mb-12">
+                        <h3 class="text-xl font-semibold text-text-primary mb-4 flex items-center">
+                            <div class="w-8 h-8 bg-error-100 rounded-lg flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                          d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 
+                                             1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 
+                                             16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                </svg>
+                            </div>
+                            La problemática
+                        </h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Bersamed requería una solución integral que permitiera coordinar sus procesos internos en tiempo real 
+                            entre distintos equipos de trabajo. El sistema anterior no lograba centralizar la información ni 
+                            brindar comunicación instantánea, lo que ocasionaba retrasos y errores en el flujo de trabajo. 
+                            Los principales retos fueron:
+                        </p>
+                        <ul class="mt-4 space-y-2 text-text-secondary">
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-error rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Falta de comunicación en tiempo real entre áreas clave, provocando descoordinación.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-error rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Ausencia de una plataforma unificada para seguimiento de trabajos y estado de tareas.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-error rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Procesos manuales que incrementaban el riesgo de errores y pérdida de información.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-error rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Limitaciones técnicas para escalar el sistema y adaptarlo a nuevas necesidades.
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Solution -->
+                    <div class="mb-12">
+                      <h3 class="text-xl font-semibold text-text-primary mb-4 flex items-center">
+                        <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+                          <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                          </svg>
+                        </div>
+                        La solución
+                      </h3>
+                      <p class="text-text-secondary leading-relaxed mb-4">
+                        SoftAdmin es una plataforma integrada que permite el seguimiento y gestión en tiempo real de trabajos técnicos, asegurando sincronización inmediata y soporte offline para mantener la productividad aún sin conexión.
+                      </p>
+                      <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-start">
+                          <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          Implementación de un backend en Spring Boot que expone API REST seguras con JWT y roles para controlar accesos.
+                        </li>
+                        <li class="flex items-start">
+                          <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          Comunicación en tiempo real mediante Server-Sent Events (SSE) para notificaciones instantáneas de cambios de estado.
+                        </li>
+                        <li class="flex items-start">
+                          <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          Integración con Firebase Cloud Messaging (FCM) para enviar notificaciones push cuando la app Android está en segundo plano o cerrada.
+                        </li>
+                        <li class="flex items-start">
+                          <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          Aplicación Android con persistencia local usando SQLite y sincronización diferida para funcionamiento offline fiable.
+                        </li>
+                        <li class="flex items-start">
+                          <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          Panel web desarrollado en Angular para gestión completa de trabajos, asignaciones y visualización en tiempo real.
+                        </li>
+                      </ul>
+                    </div>
+
+
+                    <!-- Outcomes -->
+                    <div class="mb-12">
+                      <h3 class="text-xl font-semibold text-text-primary mb-4 flex items-center">
+                        <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center mr-3">
+                          <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                          </svg>
+                        </div>
+                            Resultado e impacto
+                      </h3>
+                      <p class="text-text-secondary leading-relaxed mb-4">
+                            SoftAdmin logró optimizar significativamente la gestión y seguimiento de trabajos técnicos con resultados visibles en diferentes áreas:
+                      </p>
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-success-50 rounded-lg p-4">
+                            <div class="text-lg font-bold text-success mb-1">Actualización en tiempo real</div>
+                            <div class="text-sm text-success-600">Notificaciones instantáneas que mejoran la comunicación entre técnicos y supervisores.</div>
+                        </div>
+                        <div class="bg-primary-50 rounded-lg p-4">
+                            <div class="text-lg font-bold text-primary mb-1">Funcionalidad offline robusta</div>
+                            <div class="text-sm text-primary-600">Permite trabajar sin conexión y sincronizar datos cuando hay disponibilidad.</div>
+                        </div>
+                        <div class="bg-accent-50 rounded-lg p-4">
+                            <div class="text-lg font-bold text-accent mb-1">Seguridad y control de acceso</div>
+                            <div class="text-sm text-accent-600">Accesos protegidos mediante JWT y roles que garantizan integridad de la información.</div>
+                        </div>
+                        <div class="bg-warning-50 rounded-lg p-4">
+                            <div class="text-lg font-bold text-warning mb-1">Mayor productividad</div>
+                            <div class="text-sm text-warning-600">Reducción de errores y tiempos muertos en asignaciones y reportes de trabajo.</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation Section -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-text-primary mb-12 text-center">Implementación Técnica</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Architecture Overview -->
+                <div class="card">
+                  <h3 class="text-xl font-semibold text-text-primary mb-6">Arquitectura Backend(Servidor)</h3>
+                  <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Controlador y Servicios REST</h4>
+                        <p class="text-sm text-text-secondary">
+                          Implementación de controladores REST en Spring Boot para gestionar operaciones CRUD de trabajos, asignaciones y usuarios. Servicios desacoplados para lógica de negocio, utilizando inyección de dependencias para mantener código modular y testeable.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Módulo de Tiempo Real (SSE y FCM)</h4>
+                        <p class="text-sm text-text-secondary">
+                          Implementación de Server-Sent Events (SSE) para emitir actualizaciones en tiempo real a clientes web y Android, filtradas por roles y permisos. Integración con Firebase Cloud Messaging (FCM) para notificaciones push cuando la app está en segundo plano o cerrada.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Integración con Base de Datos MySQL</h4>
+                        <p class="text-sm text-text-secondary">
+                          Uso de Spring Data JPA para interacción con MySQL, incluyendo manejo eficiente de relaciones entre entidades (trabajos, usuarios, asignaciones). Estrategias de optimización y migraciones controladas.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-warning-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18M9 6h6M9 18h6"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Seguridad y Autenticación</h4>
+                        <p class="text-sm text-text-secondary">
+                            Configuración de Spring Security con JWT para autenticación y autorización basada en roles (admin, técnico). Control estricto de acceso a recursos y refresco de tokens para mantener sesiones seguras.
+                          
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                
+                
+                
+                
+                
+                
+                <div class="card">
+                  <h3 class="text-xl font-semibold text-text-primary mb-6">Arquitectura Android</h3>
+                  <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Capa de UI y Estado</h4>
+                        <p class="text-sm text-text-secondary">
+                          Interfaces construidas con Jetpack Compose para UI declarativa y reactiva. Gestión de estado usando ViewModel y LiveData para mantener datos persistentes y actualizados.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Comunicación con Backend</h4>
+                        <p class="text-sm text-text-secondary">
+                          Retrofit para llamadas HTTP REST seguras con autenticación JWT. Consumo de Server-Sent Events (SSE) para actualizaciones en tiempo real. Integración con Firebase Cloud Messaging (FCM) para notificaciones push.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Persistencia Local</h4>
+                        <p class="text-sm text-text-secondary">
+                          SQLite Database para almacenamiento local estructurado con soporte para sincronización diferida. WorkManager gestiona tareas en segundo plano, reintentos y sincronización segura para garantizar datos consistentes.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-warning-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18M9 6h6M9 18h6"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Gestión de Seguridad y Sesiones</h4>
+                        <p class="text-sm text-text-secondary">
+                          Manejo de tokens JWT para autenticación y autorización con almacenamiento seguro. Renovación automática de tokens y control de acceso basado en roles para proteger recursos sensibles.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                
+                
+                
+                
+                
+               <div class="card">
+                  <h3 class="text-xl font-semibold text-text-primary mb-6">Web App para Clientes y Empleados</h3>
+                  <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Frontend Layer</h4>
+                        <p class="text-sm text-text-secondary">
+                          Aplicación web desarrollada en Angular con gestión de estado reactiva y diseño responsivo usando Material Design. Interfaz adaptada para roles de clientes y empleados, mostrando solo la información permitida.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">API Layer</h4>
+                        <p class="text-sm text-text-secondary">
+                          APIs RESTful desarrolladas en Spring Boot con autenticación JWT y autorización basada en roles. Control granular que permite a los clientes acceder solo a sus propios servicios y actualizaciones, mientras que los empleados tienen acceso a toda la información necesaria para gestión.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Base de Datos</h4>
+                        <p class="text-sm text-text-secondary">
+                          MySQL gestionada vía Spring Data JPA con esquemas optimizados para separar y filtrar datos por usuario y rol. Estrategias para mantener integridad, seguridad y rendimiento en consultas multi-rol.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="card">
+                  <h3 class="text-xl font-semibold text-text-primary mb-6">Características Técnicas Clave</h3>
+                  <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Gestión en tiempo real de asignaciones y actualizaciones (SSE + FCM)</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Notificaciones push para alertas importantes, incluso con la app cerrada (FCM)</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Sincronización offline con persistencia local SQLite y lógica de reintentos</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Control de acceso seguro con autenticación y autorización JWT basada en roles</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Panel web de administración para gestión completa de trabajos y usuarios</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Diseño responsivo para dispositivos móviles y escritorio</span>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+            </div>
+
+            <!-- Code Snippets -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold text-text-primary mb-8 text-center">Fragmentos Clave del Código</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
+                    <!-- Frontend Code -->
+                    <div class="card">
+                        <h4 class="text-lg font-semibold text-text-primary mb-4">Servidor Spring Boot</h4>
+                        <div class="bg-text-primary rounded-lg p-4 overflow-x-auto">
+                            <pre class="text-sm text-green-400 font-mono">
+                            <code>
+@RestController
+@RequestMapping("/login")
+public class ControladorAuth 
+{
+    private final AutenticacionServicio autenticacionServicio;
+    private final RateLimiting rateLimiting = new RateLimiting();
+
+    public ControladorAuth(AutenticacionServicio autenticacionServicio) {
+        this.autenticacionServicio = autenticacionServicio;
+    }
+
+    @PostMapping("/trabajadores")
+    public ResponseEntit&lt;String&gt; loginTrabajadores(@RequestBody PeticionLoginTrabajadores peticion, HttpServletRequest request) throws Exception 
+    {
+        String ip = request.getRemoteAddr();
+
+        //valida la cantidad de peticiones ya hechas
+        if (!rateLimiting.permitirPeticion(ip)) {
+            return ResponseEntity.status(429).body("Demasiados intentos. Intenta de nuevo en un momento.");
+        }
+
+        //Envía el JWT
+        try {
+            String token = autenticacionServicio.iniciarSesionTrabajador(peticion.getUsuario(), peticion.getPassword());
+            return ResponseEntity.ok(token);
+        } 
+        catch (RuntimeException ex) {
+            return ResponseEntity.status(401).body(ex.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("Error interno del servidor");
+        }
+    }
+    
+    
+    @PostMapping("/clientes")
+    public ResponseEntity&lt;String&gt; loginClientes(@RequestBody PeticionLoginClientes peticion, HttpServletRequest request) throws Exception 
+    {
+        String ip = request.getRemoteAddr();
+
+
+        //valida la cantidad de peticiones ya hechas
+        if (!rateLimiting.permitirPeticion(ip)) {
+            return ResponseEntity.status(429).body("Demasiados intentos. Intenta de nuevo en un momento.");
+        }
+       
+        //Envía el JWT
+        try {
+            String token = autenticacionServicio.iniciarSesionCliente(peticion.getRazonSocial(), peticion.getRfc());
+            return ResponseEntity.ok(token);
+        } catch (RuntimeException ex) {
+            return ResponseEntity.status(401).body(ex.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("Error interno del servidor");
+        }
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <!-- Frontend Code -->
+                    <div class="card">
+                        <h4 class="text-lg font-semibold text-text-primary mb-4">Aplicación Android</h4>
+                        <div class="bg-text-primary rounded-lg p-4 overflow-x-auto">
+                            <pre class="text-sm text-green-400 font-mono">
+                            <code>
+                        
+private void autenticarUsuario(String usuario, String contraseña)
+{
+    runOnUiThread(() -&gt;
+    {
+        InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+        View view = getCurrentFocus();
+        if (view == null) {
+            view = new View(this);
+        }
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+
+        ProgressBar loading = findViewById(R.id.loading);
+        loading.setVisibility(View.VISIBLE);
+    });
+
+    new Thread(() -&gt; 
+    {
+        try {
+            URL url = new URL(getString(R.string.autenticationURL));
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("POST");
+            conn.setConnectTimeout(3000);
+            conn.setReadTimeout(3000);
+            conn.setRequestProperty("Content-Type", "application/json");
+            conn.setDoOutput(true);
+
+            JSONObject credenciales = new JSONObject();
+            credenciales.put("usuario", usuario);
+            credenciales.put("password", contraseña);
+
+            try (OutputStream os = conn.getOutputStream()) {
+                os.write(credenciales.toString().getBytes(StandardCharsets.UTF_8));
+            }
+
+            int responseCode = conn.getResponseCode();
+
+            InputStream is = (responseCode == 200)
+                    ? conn.getInputStream()
+                    : conn.getErrorStream();
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            StringBuilder response = new StringBuilder();
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
+            }
+
+            reader.close();
+            String respuesta = response.toString();
+
+            runOnUiThread(() -&gt; {
+                ProgressBar loading = findViewById(R.id.loading);
+                loading.setVisibility(View.GONE);
+
+                //Se logro logear
+                if (responseCode == 200) {
+                    SharedPreferences prefs = getSharedPreferences("auth", MODE_PRIVATE);
+                    prefs.edit().putString("jwt", respuesta).apply();
+                    irALaSiguienteActivity();
+                } else {
+                    //Error al logear
+                    String mensaje = respuesta.isEmpty() ? "Error desconocido" : respuesta;
+                    DialogodeAlerta(responseCode, mensaje, this);
+                }
+            });
+
+        } catch (Exception e)
+        {
+            //Errores externos
+            runOnUiThread(() -&gt; {
+                ProgressBar loading = findViewById(R.id.loading);
+                loading.setVisibility(View.GONE);
+
+                if (!e.getMessage().contains("after 3000ms")) {
+
+                    DialogodeAlerta(520, "Ha sucedido un error inesperado, vuelva a intentar.", this);
+                } else {
+                    DialogodeAlerta(504, "Tiempo de espera excedido, vuelva a intentar.", this);
+                }
+            });
+        }
+    }).start();            
+}
+                            
+                            </code></pre>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+
+                    <!-- Backend Code -->
+                    <div class="card">
+                        <h4 class="text-lg font-semibold text-text-primary mb-4">Web App</h4>
+                        <div class="bg-text-primary rounded-lg p-4 overflow-x-auto">
+                            <pre class="text-sm text-green-400 font-mono">
+                            <code>
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
+import { HttpResponse } from '@angular/common/http';
+import { throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthService {
+  private apiUrl = 'http://localhost:8080/login/clientes'; 
+
+  constructor(private http: HttpClient) {}
+
+login(RazonSocial: string, RFC: string): Observable&lt;HttpResponse&lt;string&gt;&gt; {
+  const credentials = { RazonSocial, RFC };
+  console.log('Enviando credenciales:', credentials);
+  return this.http.post(this.apiUrl, credentials, {
+    observe: 'response',
+    responseType: 'text'
+  }).pipe(
+    catchError(err =&gt; {
+      // Pasar el error para que lo maneje el componente
+      return throwError(() =&gt; err);
+    })
+  );
+}
+
+
+  private saveToken(token: string): void {
+    localStorage.setItem('jwt', token);
+  }
+
+  public getToken(): string | null {
+    return localStorage.getItem('jwt');
+  }
+
+  public logout(): void {
+    localStorage.removeItem('jwt');
+  }
+}
+ </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+    <!-- Visual Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-text-primary mb-12 text-center"></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Gallery Item 1 -->
+                <a href="softadmin.html"  rel="noopener noreferrer" class="relative group cursor-pointer block rounded-lg overflow-hidden">
+                  <div class="aspect-w-4 aspect-h-3">
+                    <img
+                      src="../recurses/logo_softadmin.jpeg"
+                      alt="SoftAdmin"
+                      class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <svg
+                      class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                      />
+                    </svg>
+                  </div>
+                  <p class="mt-3 text-sm font-medium text-text-primary">SoftAdmin</p>
+                </a>
+
+
+                <!-- Gallery Item 2 -->
+                 <a href="Serenity.html"  rel="noopener noreferrer" class="relative group cursor-pointer block rounded-lg overflow-hidden">
+                  <div class="aspect-w-4 aspect-h-3">
+                    <img
+                      src="https://camo.githubusercontent.com/40d690d099f6e9b16a3cace7f7c24525619212ab1068e5f3b6d9a212080b8bf2/68747470733a2f2f692e696d6775722e636f6d2f4f6175656636742e706e67"
+                      alt="Homepage Design"
+                      class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <svg
+                      class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                      />
+                    </svg>
+                  </div>
+                  <p class="mt-3 text-sm font-medium text-text-primary">Serenity</p>
+                </a>
+
+                <!-- Gallery Item 3 -->
+             <a href="Mi_Movilidad.html"  rel="noopener noreferrer" class="relative group cursor-pointer block rounded-lg overflow-hidden">
+                  <div class="aspect-w-4 aspect-h-3">
+                    <img
+                      src="../recurses/mimovilidadpagina.png"
+                      alt="Homepage Design"
+                      class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <svg
+                      class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                      />
+                    </svg>
+                  </div>
+                  <p class="mt-3 text-sm font-medium text-text-primary">Mi Movilidad</p>
+                </a>
+
+               
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="py-12 bg-surface border-t border-secondary-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+                <a href="Mi_Movilidad.html"  class="flex items-center text-text-secondary hover:text-primary transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Proyecto Anterior
+                </a>
+                
+                <a href="portfolio_landing_page.html" class="btn-secondary">
+                    Regresar al Portafolio
+                </a>
+                
+                <a href="Serenity.html" class="flex items-center text-text-secondary hover:text-primary transition-colors">
+                    Siguiente Proyecto
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-semibold text-white  mb-4">Carlo Iván Quezada Venegas</h3>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Actualmente me desempeño como ingeniero de software, en la planeación y desarrollo de sistemas para Bersamed.
+                        <br>He publicado mi primer articulo de investigación en el 14<sup>th</sup> International Congress in Telematics & Computing.
+                        <br>Fuí asistente en la escuela de Verano de Ciencias Cognitivo Computacionales y Procesamiento del Lenguaje Natural.
+                
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/carlo-iv%C3%A1n-quezada-venegas-24440b305/" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/QVCI" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white  mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">Acerca de mi</a></li>
+                        <li><a href="#skills" class="text-gray-300 hover:text-white transition-colors">Habilidades y experiencia</a></li>
+                        <li><a href="#experience" class="text-gray-300 hover:text-white transition-colors">Experiencia laboral</a></li>
+                        <li><a href="project_showcase_detail.html" class="text-gray-300 hover:text-white transition-colors">Proyectos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white  mb-4">Recursos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="MiCV.pdf" class="text-gray-300 hover:text-white transition-colors">Mi CV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Quezada Venegas Carlo Iván. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl max-h-full">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white hover:text-gray-300 z-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <img id="lightbox-image" src alt="Project Screenshot" class="max-w-full max-h-full object-contain rounded-lg" />
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Lightbox functionality
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = imageSrc;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox when clicking outside image
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') {
+                closeLightbox();
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.card, .skill-badge').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add loading states for external links
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            link.addEventListener('click', function() {
+                this.style.opacity = '0.7';
+                setTimeout(() => {
+                    this.style.opacity = '1';
+                }, 1000);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

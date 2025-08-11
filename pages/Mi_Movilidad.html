@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Movilidad - Detalles del Proyecto | Proyecto de Titulación</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdeveloper9160back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Fixed Header Navigation -->
+     <header class="fixed top-0 left-0 right-0 z-50 bg-white/50 backdrop-blur-sm border-b border-secondary-200">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0">
+                    <a href="portfolio_landing_page.html" class="text-xl font-semibold text-primary hover:text-primary-700 transition-colors">
+                        Carlo Iván Quezada Venegas
+                    </a>
+                </div>
+
+               <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Acerca de mí</a>
+                        <a href="#skills" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Habilidades</a>
+                        <a href="#experience" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experiencia</a>
+                        <a href="#education" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Estudios y Reconocimientos</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-primary hover:bg-secondary-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path class="inline" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-secondary-200">
+                    <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Acerca de mí</a>
+                    <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Habilidades</a>
+                    <a href="#experience" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Experiencia</a>
+                    <a href="#education" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Estudios </a>
+                   <a href="contact_collaboration.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="pt-20 pb-4 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center space-x-2 text-sm text-text-secondary">
+                <a href="portfolio_landing_page.html" class="hover:text-primary transition-colors">Inicio</a>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="text-text-primary font-medium">Proyectos</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="text-text-primary font-medium">Mi Movilidad</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Project Hero Section -->
+    <section class="py-12 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Main Content -->
+                <div class="lg:col-span-2">
+                    <div class="mb-8">
+                        <h1 class="text-4xl sm:text-5xl font-bold text-text-primary mb-4">Mi Movilidad</h1>
+                      <p class="text-text-secondary leading-relaxed">
+                        En la categoría de Proyecto de Transporte y Movilidad Urbana, el equipo conformado por Luis Aguilar Torres, Samuel Gutiérrez López, Daniela Montaño Sánchez, Natalia Neshmi Nolasco Quezada, Abdiel Reyes Vera y Carlo Iván Quezada Venegas, obtuvo un reconocimiento de 20 mil pesos por el proyecto titulado <i>"Sistema de Optimización de Rutas de Movilidad Integrada en la Ciudad de México"</i>.  
+                        Este trabajo plantea el cálculo de rutas de movilidad compartida o integrada, con y sin conexión a internet, utilizando tecnologías como Firebase de Google para ofrecer información en tiempo real sobre líneas, mapas, estaciones, horarios, costos y seguimiento de personas que usan diferentes sistemas de transporte público.  
+                        El reconocimiento fue otorgado en el marco del foro <i>“Transporte y Ciudad: Política Nacional de Transporte Público Colectivo Urbano”</i>, evidenciando la innovación y relevancia social del proyecto.
+                      </p>
+
+
+
+                        
+                        <!-- Technology Tags -->
+                  <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">Spring Boot</span>
+                    <span class="skill-badge">Firebase (Realtime DB, Firestore, Authentication)</span>
+                    <span class="skill-badge">Google Maps Directions API</span>
+                    <span class="skill-badge">Android (Java, Jetpack Compose)</span>
+                    <span class="skill-badge">Material Design</span>
+                    <span class="skill-badge">Algoritmo de Dijkstra</span>
+                  </div>
+
+ <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a style = "color:black;" href="https://mitransporte-768d7.web.app" target="_blank" class="btn-primary inline-flex items-center justify-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                Mirar Página Web
+                            </a>
+                          
+                        </div>
+                        
+                    </div>
+
+                    <!-- Featured Image/Demo -->
+                    <div class="relative mb-12">
+                        <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                            <img src="../recurses/mimovilidadpagina.png" alt="E-Commerce Platform Dashboard" class="w-full h-96 object-cover cursor-pointer hover-lift" loading="lazy" onclick="openLightbox(this.src)" onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg pointer-events-none"></div>
+                    </div>
+                </div>
+
+                <!-- Project Metadata Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="card sticky top-24">
+                        <h3 class="text-lg font-semibold text-text-primary mb-6">Detalles del Proyecto</h3>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Duración</h4>
+                                <p class="text-text-primary">10 meses</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Tamaño del Equipo</h4>
+                                <p class="text-text-primary">5 desarrolladores</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Mi Rol</h4>
+                               <p class="text-text-primary">
+                                  Arquitecto de Software, responsable de planificar las tecnologías a 
+                                 utilizar y de realizar el despliegue de la página web. Además, 
+                                 desarrollé de manera fullstack el backend y frontend para Android, 
+                                 incluyendo los microservicios necesarios. 
+                              </p>
+
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Cliente</h4>
+                                <p class="text-text-primary">CECyT 9 - Proyecto de titulación</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Fecha de finalización</h4>
+                                <p class="text-text-primary">Junio 2024</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-medium text-text-secondary mb-2">Habilidades Claves Demostradas</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="text-xs bg-primary-100 text-primary px-2 py-1 rounded">Planificación y arquitectura de software</span>
+                                    <span class="text-xs bg-accent-100 text-accent px-2 py-1 rounded">Diseño de API REST</span>
+                                    <span class="text-xs bg-success-100 text-success px-2 py-1 rounded">Desarrollo backend (Java, Spring Boot)</span>
+                                    <span class="text-xs bg-success-100 text-success px-2 py-1 rounded">Desarrollo Android (Java, Jetpack Compose)</span>
+                                    <span class="text-xs bg-warning-100 text-warning px-2 py-1 rounded">Despliegue y gestión de hosting (Firebase, Web)</span>
+                                    <span class="text-xs bg-warning-100 text-warning px-2 py-1 rounded">Liderazgo técnico de equipo</span>
+                                    <span class="text-xs bg-accent-100 text-accent px-2 py-1 rounded">Microservicios y arquitectura distribuida</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold text-text-primary mb-8">Descripción General del Proyecto</h2>
+                    
+                    <!-- Challenge -->
+                    <div class="mb-12">
+                        <h3 class="text-xl font-semibold text-text-primary mb-4 flex items-center">
+                            <div class="w-8 h-8 bg-error-100 rounded-lg flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                          d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 
+                                             1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 
+                                             16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                </svg>
+                            </div>
+                            La problemática
+                        </h3>
+                         <p class="text-text-secondary leading-relaxed">
+                            Este proyecto plantea el cálculo de rutas para movilidad compartida e integrada, tanto con conexión a internet como sin ella, utilizando tecnologías como Firebase de Google para ofrecer información en tiempo real sobre líneas, mapas, estaciones, horarios, costos y seguimiento de usuarios en diferentes sistemas de transporte público. 
+                            A pesar de que existen sistemas que consideran datos en tiempo real y mapas, el valor principal de esta solución es la integración y centralización de la información, ya que actualmente la información oficial está dispersa, desactualizada o presenta inconsistencias entre distintas fuentes gubernamentales.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-text-secondary">
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-error rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Dificultad para compartir ubicación en tiempo real, lo que impacta en la seguridad de los usuarios.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-error rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Falta de opciones confiables para cálculo y visualización de rutas offline.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-error rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Fragmentación y desactualización de la información oficial sobre transporte público en diferentes plataformas.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-error rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Necesidad de centralizar datos y mejorar la experiencia del usuario con una plataforma unificada.
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+
+                    <!-- Solution -->
+                    <div class="mb-12">
+                      <h3 class="text-xl font-semibold text-text-primary mb-4 flex items-center">
+                        <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+                          <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                          </svg>
+                        </div>
+                        La solución
+                      </h3>
+                      <p class="text-text-secondary leading-relaxed mb-4">
+                          La solución desarrollada es una plataforma integrada que permite el cálculo y visualización de rutas para movilidad compartida e integrada, con soporte para uso offline y en tiempo real. Utiliza Firebase para ofrecer información actualizada sobre líneas, estaciones, horarios, costos y el seguimiento en vivo de usuarios para mejorar su seguridad y experiencia.
+                      </p>
+                      <ul class="space-y-2 text-text-secondary">
+                          <li class="flex items-start">
+                              <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                              Cálculo de rutas óptimas integrando distintas modalidades de transporte, con y sin conexión a internet.
+                          </li>
+                          <li class="flex items-start">
+                              <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                              Visualización en tiempo real y compartición segura de la ubicación de los usuarios para mayor seguridad.
+                          </li>
+                          <li class="flex items-start">
+                              <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                              Centralización de información dispersa y actualización automática usando Firebase y Google Maps.
+                          </li>
+                          <li class="flex items-start">
+                              <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                              Soporte offline con sincronización diferida para garantizar disponibilidad constante incluso sin conexión.
+                          </li>
+                          <li class="flex items-start">
+                              <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                              Interfaz intuitiva para visualizar rutas y mapas que mejora la experiencia del usuario final.
+                          </li>
+                      </ul>
+
+                    </div>
+
+
+                    <!-- Outcomes -->
+                    <div class="mb-12">
+                      <h3 class="text-xl font-semibold text-text-primary mb-4 flex items-center">
+                        <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center mr-3">
+                          <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                          </svg>
+                        </div>
+                            Resultado e impacto
+                      </h3>
+                      <p class="text-text-secondary leading-relaxed mb-4">
+                          El proyecto Mi Movilidad logró optimizar significativamente la movilidad urbana en la Ciudad de México mediante una solución innovadora con funcionalidades offline y en tiempo real. Los resultados obtenidos demuestran avances en la experiencia del usuario, eficiencia en el cálculo de rutas y seguridad en el seguimiento de personas. Además, el proyecto fue reconocido con el 15° Premio Nacional de Transporte Urbano y Movilidad 2024 en la categoría de Proyecto de Transporte y Movilidad Urbana, destacando su innovación y relevancia social.
+                      </p>
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                          <div class="bg-success-50 rounded-lg p-4">
+                              <div class="text-lg font-bold text-success mb-1">Cálculo y visualización en tiempo real</div>
+                              <div class="text-sm text-success-600">La aplicación ofrece rutas óptimas con datos actualizados que mejoran la toma de decisiones y reducen tiempos de viaje.</div>
+                          </div>
+                          <div class="bg-primary-50 rounded-lg p-4">
+                              <div class="text-lg font-bold text-primary mb-1">Funcionalidad offline robusta</div>
+                              <div class="text-sm text-primary-600">Permite el uso y cálculo de rutas sin conexión, garantizando disponibilidad constante para los usuarios.</div>
+                          </div>
+                          <div class="bg-accent-50 rounded-lg p-4">
+                              <div class="text-lg font-bold text-accent mb-1">Seguridad y compartición de ubicación</div>
+                              <div class="text-sm text-accent-600">La localización en tiempo real mejora la seguridad de los usuarios durante sus trayectos.</div>
+                          </div>
+                          <div class="bg-warning-50 rounded-lg p-4">
+                              <div class="text-lg font-bold text-warning mb-1">Centralización de información</div>
+                              <div class="text-sm text-warning-600">Integración de datos dispersos y desactualizados en una plataforma unificada y confiable.</div>
+                          </div>
+                      </div>
+                      <p class="text-text-secondary leading-relaxed mb-4">
+                          El prototipo fue evaluado preliminarmente con usuarios reales, mostrando éxito funcional en cálculo de rutas, compartición de ubicación y acceso a información en tiempo real. Sin embargo, se identificaron áreas de mejora, como la ampliación de la cobertura de datos y el diseño de una interfaz más amigable. Este trabajo será publicado en la conferencia <strong>Conferences and Workshops in Telematics and Computing (WITCOM) 2025</strong>, organizada por UPIITA - IPN, contribuyendo al avance de la movilidad integrada en México.
+                      </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation Section -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-text-primary mb-12 text-center">Implementación Técnica</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Architecture Overview -->
+                <div class="card">
+                  <h3 class="text-xl font-semibold text-text-primary mb-6">Arquitectura Backend(Servidor)</h3>
+                  <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Controlador y Servicios REST</h4>
+                        <p class="text-sm text-text-secondary">
+                          Implementación de controladores REST en Spring Boot para gestionar
+                            los reportes de problematicas en las diversas estaciones.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Sistema de anuncios inteligentes</h4>
+                        <p class="text-sm text-text-secondary">
+                            Procesamiento de reportes de incidentes, para evitar reportes maliciosos, se requiere un alto volumen de reportes.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Integración con Base de Datos MySQL</h4>
+                        <p class="text-sm text-text-secondary">
+                          Uso de Spring Data JPA para interacción con MySQL, incluyendo manejo eficiente de relaciones entre entidades (ubicaciones, reportes, usuarios).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                
+                
+                
+                
+                
+                
+                <div class="card">
+                      <h3 class="text-xl font-semibold text-text-primary mb-6">Arquitectura Android</h3>
+                      <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                          <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-text-primary">Capa de UI y Estado</h4>
+                            <p class="text-sm text-text-secondary">
+                              Interfaces desarrolladas con Jetpack Compose para una UI declarativa y reactiva. Gestión del estado mediante ViewModel y LiveData que garantizan persistencia y actualización eficiente.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                          <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-text-primary">Autenticación y Servicios en la Nube</h4>
+                            <p class="text-sm text-text-secondary">
+                              Uso de OAuth 2.0 con Firebase Authentication para login seguro y manejo de sesiones. Firebase Realtime Database y Firestore para la compartición segura y en tiempo real de la ubicación de usuarios.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                          <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-text-primary">Persistencia Local y Sincronización</h4>
+                            <p class="text-sm text-text-secondary">
+                              Almacenamiento de rutas y datos críticos en SQLite para consulta offline. WorkManager gestiona sincronización diferida y tareas en segundo plano para mantener la consistencia.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                          <div class="w-8 h-8 bg-warning-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18M9 6h6M9 18h6"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-text-primary">Cálculo y Visualización de Rutas</h4>
+                            <p class="text-sm text-text-secondary">
+                              Implementación del algoritmo de Dijkstra para cálculo óptimo de rutas integradas. Visualización de mapas y rutas usando la API de Google Maps para mejorar la experiencia del usuario.
+                            </p>
+                          </div>
+                        </div>
+
+                           <div class="flex items-start space-x-3">
+                          <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-text-primary">Comunicación con Backend para Incidentes</h4>
+                            <p class="text-sm text-text-secondary">
+                              Uso de Retrofit para llamadas HTTP REST enfocadas en obtener anuncios de incidentes y alertas que afectan el transporte público.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                
+                
+                
+                
+                
+                
+            <div class="card">
+                  <h3 class="text-xl font-semibold text-text-primary mb-6">Web App para Clientes y Empleados</h3>
+                  <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Frontend Informativo y Funcional</h4>
+                        <p class="text-sm text-text-secondary">
+                          Aplicación web desarrollada para ofrecer información relevante, con integración de pago mediante PayPal para cuentas premium. Además, permite a los usuarios descargar la aplicación móvil. Diseño responsivo para diferentes dispositivos.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Autenticación y Hosting</h4>
+                        <p class="text-sm text-text-secondary">
+                          Login seguro implementado con OAuth 2.0 a través de Firebase Authentication. La aplicación está hospedada en Firebase Hosting, garantizando alta disponibilidad y rendimiento.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-text-primary">Integración de Pagos</h4>
+                        <p class="text-sm text-text-secondary">
+                          Implementación del sistema de pagos con PayPal para suscripciones premium, facilitando el acceso a funcionalidades adicionales y mejoras en la experiencia del usuario.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Key Features -->
+               <div class="card">
+                  <h3 class="text-xl font-semibold text-text-primary mb-6">Características Técnicas Clave</h3>
+                  <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Cálculo de rutas optimizadas con el algoritmo de Dijkstra, con soporte offline para consulta sin conexión</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Compartición de ubicación en tiempo real para seguridad y coordinación de usuarios mediante Firebase</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Visualización dinámica de mapas, estaciones, líneas y horarios mediante Google Maps API</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Persistencia local con SQLite para almacenamiento de rutas y datos con sincronización diferida</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Autenticación segura con OAuth 2.0 y Firebase Authentication para login y gestión de usuarios</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-text-secondary">Obtención de anuncios e incidentes en tiempo real vía llamadas HTTP REST</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                </div>
+            </div>
+
+            <!-- Code Snippets -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold text-text-primary mb-8 text-center">Fragmentos Clave del Código</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
+                    <!-- Frontend Code -->
+                    <div class="card">
+                        <h4 class="text-lg font-semibold text-text-primary mb-4">Servidor Spring Boot</h4>
+                        <div class="bg-text-primary rounded-lg p-4 overflow-x-auto">
+                            <pre class="text-sm text-green-400 font-mono">
+                            <code>
+@GetMapping("/consultar")
+public ResponseEntity&lt;?&gt; consultarMensajes() {
+    List&lt;Mensaje&gt; mensajes = mensajeRepository.findAll();
+
+    if (mensajes.isEmpty()) {
+        return ResponseEntity.status(HttpStatus.OK).body("Sin novedades");
+    } else {
+        return ResponseEntity.status(HttpStatus.OK).body(mensajes);
+    }
+}
+
+Scheduled(cron = "0 0 * * * *")
+public void procesarMensajesCadaHora() {
+    LocalTime horaActual = LocalTime.now();
+    LocalTime horaLimite = horaActual.minusHours(1);
+    
+    logger.info("Mensaje del servidor: ","Se depuró la base de datos a las: " + horaActual);
+
+    List&lt;Mensaje&gt; mensajes = mensajeRepository.findByHoraPublicacionBefore(horaLimite);
+    
+    // Filtrar anuncios para eliminar
+    List&lt;Anuncio&gt; anunciosParaEliminar = listaAnuncios.stream()
+            .filter(anuncio -&gt; anuncio.getHoraEnvio().isBefore(horaLimite))
+            .collect(Collectors.toList());
+    
+    // Eliminar anuncios y procesar mensajes
+    for (Anuncio anuncio : anunciosParaEliminar) {
+        
+        listaAnuncios.remove(anuncio);
+    }
+
+    // Procesar mensajes
+    for (Mensaje mensaje : mensajes) {
+        guardarEnArchivo(mensaje);
+        mensajeRepository.delete(mensaje);
+    }
+
+}
+</code></pre>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <!-- Frontend Code -->
+                    <div class="card">
+                        <h4 class="text-lg font-semibold text-text-primary mb-4">Aplicación Android</h4>
+                        <div class="bg-text-primary rounded-lg p-4 overflow-x-auto">
+                            <pre class="text-sm text-green-400 font-mono">
+                            <code>
+
+@Override
+protected List&lt;Mensaje&gt; doInBackground(Void... voids) {
+    try {
+        
+        URL url = new URL("XXXXXXX");
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+        // Configurar la conexión
+        connection.setRequestMethod("GET");
+
+        // Verificar la respuesta del servidor
+        int responseCode = connection.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            // Éxito
+            InputStream inputStream = connection.getInputStream();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            // Parsear la respuesta (puedes usar Gson u otras bibliotecas)
+            List&lt;Mensaje&gt; mensajes = parsearRespuesta(reader);
+            inputStream.close();
+            return mensajes;
+        } else {
+            // Manejar el error, si es necesario
+            Log.e("HTTP", "Error al consultar mensajes: " + responseCode);
+        }
+        connection.disconnect();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+    return null;
+}
+
+@Override
+protected void onPostExecute(List&lt;Mensaje&gt; mensajes) {
+    super.onPostExecute(mensajes);
+    if (callback != null) {
+        callback.onMensajesObtenidos(mensajes);
+    }
+}
+
+// Método para parsear la respuesta del servidor (puedes usar Gson u otras bibliotecas)
+private List&lt;Mensaje&gt; parsearRespuesta(BufferedReader reader) {
+    StringBuilder respuestaJson = new StringBuilder();
+    String linea;
+    try {
+        while ((linea = reader.readLine()) != null) {
+            respuestaJson.append(linea);
+        }
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+
+    return new Gson().fromJson(respuestaJson.toString(), new TypeToken&lt;List&lt;Mensaje&gt;&gt;() {}.getType());
+}
+                            
+                            </code></pre>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+
+                    <!-- Backend Code -->
+                    <div class="card">
+                        <h4 class="text-lg font-semibold text-text-primary mb-4">Web App</h4>
+                        <div class="bg-text-primary rounded-lg p-4 overflow-x-auto">
+                            <pre class="text-sm text-green-400 font-mono">
+                            <code>
+&lt;!-- ======= Hero Section ======= --&gt;
+  &lt;section id="hero" class="d-flex flex-column justify-content-center"&gt;
+    &lt;div class="container"&gt;
+      &lt;div class="row justify-content-center"&gt;
+        &lt;div class="col-xl-8"&gt;
+          &lt;h1&gt;MI Movilidad&lt;/h1&gt;
+          &lt;h2&gt;Tu pones el destino, nosotros la ruta.&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;&lt;!-- End Hero --&gt;
+  &lt;main id="main"&gt;
+    &lt;!-- ======= About Us Section ======= --&gt;
+    &lt;section id="about" class="about"&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="section-title"&gt;
+          &lt;h2&gt;Acerca de&lt;/h2&gt;
+          &lt;p&gt;MI Movilidad es un proyecto innovador que busca facilitar y mejorar la experiencia de movilidad en la Ciudad de México a través de una aplicación móvil y una 
+            serie de servicios que se complementan para  ofrecer a los usuarios una forma más eficiente, segura y cómoda de desplazarse por la red de Movilidad Integrada (MI).&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="row content"&gt;
+          &lt;div class="col-lg-6"&gt;
+            &lt;p&gt;
+              La complejidad del transporte público es un problema por el que millones de personas pasan diariamente, la ineficiencia, el tiempo y la 
+              falta de información generan una experiencia colectiva agotante según un estudio realizado en la Ciudad de México(CDMX).
+            &lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;i class="ri-check-double-line"&gt;&lt;/i&gt; Más de 14 millones de personas utilizan un transporte público diariamente en la CDMX.&lt;/li&gt;
+              &lt;li&gt;&lt;i class="ri-check-double-line"&gt;&lt;/i&gt; Realizar un viaje en transporte público implica un 54% más de tiempo.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-6 pt-4 pt-lg-0"&gt;
+            &lt;p&gt;
+              MI Movilidad es una aplicación totalmente gratuita, pero puedes pagar una suscripción que te 
+              desbloqueará nuevos beneficios que complementarán aún más tu experiencia dentro de la aplicación
+            &lt;/p&gt;
+            &lt;a href="#pricing" class="btn-learn-more"&gt;Ver más&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;&lt;!-- End About Us Section --&gt;
+                            
+
+ </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+    <!-- Visual Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-text-primary mb-12 text-center"></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Gallery Item 1 -->
+                <a href="softadmin.html"  rel="noopener noreferrer" class="relative group cursor-pointer block rounded-lg overflow-hidden">
+                  <div class="aspect-w-4 aspect-h-3">
+                   <img
+                      src="../recurses/logo_softadmin.jpeg"
+                      alt="SoftAdmin"
+                      class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <svg
+                      class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                      />
+                    </svg>
+                  </div>
+                  <p class="mt-3 text-sm font-medium text-text-primary">SoftAdmin</p>
+                </a>
+
+
+                <!-- Gallery Item 2 -->
+                 <a href="Serenity.html"  rel="noopener noreferrer" class="relative group cursor-pointer block rounded-lg overflow-hidden">
+                  <div class="aspect-w-4 aspect-h-3">
+                    <img
+                      src="https://camo.githubusercontent.com/40d690d099f6e9b16a3cace7f7c24525619212ab1068e5f3b6d9a212080b8bf2/68747470733a2f2f692e696d6775722e636f6d2f4f6175656636742e706e67"
+                      alt="Homepage Design"
+                      class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <svg
+                      class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                      />
+                    </svg>
+                  </div>
+                  <p class="mt-3 text-sm font-medium text-text-primary">Serenity</p>
+                </a>
+
+                <!-- Gallery Item 3 -->
+             <a href="Mi_Movilidad.html"  rel="noopener noreferrer" class="relative group cursor-pointer block rounded-lg overflow-hidden">
+                  <div class="aspect-w-4 aspect-h-3">
+                    <img
+                      src="../recurses/mimovilidadpagina.png"
+                      alt="Homepage Design"
+                      class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <svg
+                      class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                      />
+                    </svg>
+                  </div>
+                  <p class="mt-3 text-sm font-medium text-text-primary">Mi Movilidad</p>
+                </a>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="py-12 bg-surface border-t border-secondary-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+                <a href="Serenity.html"  class="flex items-center text-text-secondary hover:text-primary transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Proyecto Anterior
+                </a>
+                
+                <a href="portfolio_landing_page.html" class="btn-secondary">
+                    Regresar al Portafolio
+                </a>
+                
+                <a href="softadmin.html" class="flex items-center text-text-secondary hover:text-primary transition-colors">
+                    Siguiente Proyecto
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-semibold text-white  mb-4">Carlo Iván Quezada Venegas</h3>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Actualmente me desempeño como ingeniero de software, en la planeación y desarrollo de sistemas para Bersamed.
+                        <br>He publicado mi primer articulo de investigación en el 14<sup>th</sup> International Congress in Telematics & Computing.
+                        <br>Fuí asistente en la escuela de Verano de Ciencias Cognitivo Computacionales y Procesamiento del Lenguaje Natural.
+                
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/carlo-iv%C3%A1n-quezada-venegas-24440b305/" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/QVCI" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white  mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">Acerca de mi</a></li>
+                        <li><a href="#skills" class="text-gray-300 hover:text-white transition-colors">Habilidades y experiencia</a></li>
+                        <li><a href="#experience" class="text-gray-300 hover:text-white transition-colors">Experiencia laboral</a></li>
+                        <li><a href="project_showcase_detail.html" class="text-gray-300 hover:text-white transition-colors">Proyectos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white  mb-4">Recursos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="MiCV.pdf" class="text-gray-300 hover:text-white transition-colors">Mi CV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Quezada Venegas Carlo Iván. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl max-h-full">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white hover:text-gray-300 z-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <img id="lightbox-image" src alt="Project Screenshot" class="max-w-full max-h-full object-contain rounded-lg" />
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Lightbox functionality
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = imageSrc;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox when clicking outside image
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') {
+                closeLightbox();
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.card, .skill-badge').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add loading states for external links
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            link.addEventListener('click', function() {
+                this.style.opacity = '0.7';
+                setTimeout(() => {
+                    this.style.opacity = '1';
+                }, 1000);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

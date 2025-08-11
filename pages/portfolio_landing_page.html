@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlo Iván - Desarrollador Backend Portafolio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdeveloper9160back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Fixed Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/50 backdrop-blur-sm border-b border-secondary-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0">
+                    <a href="#hero" class="text-xl font-semibold text-primary hover:text-primary-700 transition-colors">
+                        Carlo Iván Quezada Venegas
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Acerca de mí</a>
+                        <a href="#skills" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Habilidades</a>
+                        <a href="#experience" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experiencia</a>
+                        <a href="#education" class="nav-link text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Estudios y Reconocimientos</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-primary hover:bg-secondary-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path class="inline" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-secondary-200">
+                    <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Acerca de mí</a>
+                    <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Habilidades</a>
+                    <a href="#experience" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Experiencia</a>
+                    <a href="#education" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Estudios </a>
+                    <a href="contact_collaboration.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary hover:bg-secondary-100">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-16 min-h-screen flex items-center bg-gradient-to-br from-surface to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-6 animate-fade-in-up">
+                        Hola soy <span class="text-gradient">Carlo Iván</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-text-secondary mb-8 animate-fade-in-up" style="animation-delay: 0.2s;">
+                        Estudiante de Ing. en Inteligencia Artificial y desarrollador de software
+                    </p>
+                    <p class="text-lg text-text-secondary mb-8 max-w-2xl animate-fade-in-up" style="animation-delay: 0.4s;">
+                      Desarrollador de microservicios y desarrollador de Android fullstack.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up" style="animation-delay: 0.6s;">
+                        <a style = "color: black" href="MiCV.pdf" download class="btn-primary inline-flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                            Descargar mi CV
+                        </a>
+
+                        <a href="softadmin.html" class="btn-secondary inline-flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                            Mis Proyectos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="w-80 h-80 rounded-full overflow-hidden border-8 border-white shadow-lg hover-lift">
+                            <img src="mifoto.jpeg" alt="Mi fotografía" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <!-- Floating Elements -->
+                        <div class="absolute -top-4 -right-4 w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center animate-pulse">
+                            <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center animate-pulse" style="animation-delay: 1s;">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">Acerca de mi</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                      Actualmente me desempeño como ingeniero de software, en la planeación y desarrollo de sistemas para Bersamed.
+                        <br>He publicado mi primer articulo de investigación en el 14<sup>th</sup> International Congress in Telematics & Computing.
+                        <br>Fuí asistente en la escuela de Verano de Ciencias Cognitivo Computacionales y Procesamiento del Lenguaje Natural.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold text-text-primary mb-6">Mi trayectoria</h3>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        Egrese de la carrera de Técnico en Programación en el CECyT 9 "Juan de Dios Bátiz".
+                        <br>Gracias al proyecto que desarrolle junto a mis amigos y compañeros de trabajo, junto a la tutela del M. en C Abdiel Reyes Vera, hemos ganado el primer lugar del 15.º Premio Nacional de Transporte Urbano y Movilidad 2024 en la categoría de Proyecto de Transporte y Movilidad Urbana.
+                        <br>Hemos redactado nuestro primer articulo de Investigación, el cual será publicado en el 4th International Congress in Telematics & Computing.
+                    </p>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        Tengo experiencia en el desarrollo de chatbots y aplicaciones Android, me especializo en el desarrollo backend mediante el uso de SpringBoot.
+                        <br>Creo que el aprovechamiento de las tecnologías modernas como puede ser Firebase, tiene la capacidad de mejorar la productibilidad y la calidad del software desarrollado.
+                        <br>Me gusta participar, proponiendo ideas sobre el camino a seguir para el desarrollo de tecnologías, buscando soluciones inovadoras y que se adapten a los requerimientos.
+                        <br>
+                       
+                    </p>
+                    
+                    <!-- Soft Skills -->
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-text-secondary">Resolución de problemas</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-text-secondary">Iniciativa y pasión</span>
+                        </div>
+                          <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-accent rounded-full"></div>
+                            <span class="text-text-secondary">Trabajo en equipo</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-accent rounded-full"></div>
+                            <span class="text-text-secondary">Adaptabilidad</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-success rounded-full"></div>
+                            <span class="text-text-secondary">Compromiso</span>
+                        </div>
+                          <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-success rounded-full"></div>
+                            <span class="text-text-secondary">Comunicación</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="fotoconmisamigos.jpeg" class="rounded-lg shadow-lg w-full h-96 object-cover hover-lift" loading="lazy" onerror="this.src='fotoconmisamigos.jpeg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">Habilidades y experiencia</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Tecnologías y Herramientas
+                </p>
+            </div>
+
+            <!-- Technology Stack -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-text-primary mb-8 text-center">Lenguajes y Tecnologías</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                    <!-- Frontend -->
+                    <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                              <img src="https://skillicons.dev/icons?i=java" height="40" alt="java logo"/>
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Java</span>
+                    </div>
+                    
+                    <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                             <img src="https://skillicons.dev/icons?i=js" height="40" alt="javascript logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">JavaScript</span>
+                    </div>
+                    
+                    <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                             <img src="https://skillicons.dev/icons?i=py" height="40" alt="Python logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Python</span>
+                    </div>
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                            <img src="https://skillicons.dev/icons?i=cpp" height="40" alt="cplusplus logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">C++</span>
+                    </div>
+                    
+                    <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                             <img src="https://skillicons.dev/icons?i=nodejs" height="40" alt="Node.js logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Node.js</span>
+                    </div>
+                    
+                    <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                            <img src="https://skillicons.dev/icons?i=docker" height="40" alt="docker logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Docker</span>
+                    </div>                  
+                    
+                    <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                            <img src="https://skillicons.dev/icons?i=mysql" height="40" alt="mysql logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">MySQL</span>
+                    </div>
+                    
+
+                    
+                    <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                              <img src="https://skillicons.dev/icons?i=sqlite" height="40" alt="sqlite logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">SQLite</span>
+                    </div>
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                            <img src="https://skillicons.dev/icons?i=androidstudio" height="40" alt="androidstudio logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Android Studio</span>
+                    </div>
+                    
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                              <img src="https://skillicons.dev/icons?i=spring" height="40" alt="spring logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Spring</span>
+                    </div>
+                    
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                              <img src="https://skillicons.dev/icons?i=powershell" height="40" alt="powershell logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">PowerShell</span>
+                    </div>
+                    
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                                <img src="https://skillicons.dev/icons?i=postman" height="40" alt="postman logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Postman</span>
+                    </div>
+                    
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                              <img src="https://skillicons.dev/icons?i=firebase" height="40" alt="firebase logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Firebase</span>
+                    </div>
+                    
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                              <img src="https://skillicons.dev/icons?i=git" height="40" alt="git logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Git</span>
+                    </div>
+                    
+                    
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                              <img src="https://skillicons.dev/icons?i=github" height="40" alt="github logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">GitHub</span>
+                    </div>
+                    
+                    
+                    
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                                <img src="https://cdn.simpleicons.org/jira/0052CC" height="40" alt="jira logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Jira</span>
+                    </div>
+                    
+                    
+                    
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                              <img src="https://skillicons.dev/icons?i=bash" height="40" alt="bash logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Bash</span>
+                    </div>
+                    
+                    
+                      <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mb-3 group-hover:shadow-lg transition-shadow">
+                              <img src="https://skillicons.dev/icons?i=gcp" height="40" alt="googlecloud logo"  />
+                        </div>
+                        <span class="text-sm font-medium text-text-secondary">Google CLoud</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Progress Bars -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold text-text-primary mb-6">Desarrollo FrontEnd</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-text-secondary">XML (Android) Jetpack Compose</span>
+                                <span class="text-sm text-text-secondary">70%</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-text-secondary">CSS</span>
+                                <span class="text-sm text-text-secondary">40%</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-text-primary mb-6">Backend Development</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-text-secondary">SpringBoot</span>
+                                <span class="text-sm text-text-secondary">75%</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-text-secondary">Bases de datos y normalización</span>
+                                <span class="text-sm text-text-secondary">85%</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-text-secondary">Desarrollo de Servicios Web (API & SSE)</span>
+                                <span class="text-sm text-text-secondary">90%</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">Experiencia laboral</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Mi experiencia a lo largo de proyectos
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5 bg-secondary-300"></div>
+
+                <!-- Experience Items -->
+                <div class="space-y-12">
+                    <!-- Experience 1 -->
+                    <div class="relative flex items-center">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8">
+                            <div class="card hover:shadow-lg transition-shadow">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-text-primary">Ingeniero de Software</h3>
+                                        <p style="color: #ff0000;" class="text-primary font-medium">Bersamed</p>
+                                    </div>
+                                    <span class="text-sm text-text-secondary bg-secondary-100 px-3 py-1 rounded-full">Junio 2025 - Actualidad</span>
+                                </div>
+                                <p class="text-text-secondary mb-4">
+                                    Participo activamente en propuestas iniciales, planificación y desarrollo de soluciones en tiempo real para la optimización de procesos de trabajo.<br>Desarrollo backend con Spring Boot para aplicaciones Android y soporte en desarrollo frontend.<br>Implementación de contenedores con Docker y control de versiones utilizando TortoiseGit.<br>Diseño y desarrollo de APIs REST seguras, manejo de autenticación con JWT y conexión con bases de datos relacionales.<br>Colaboración en mejora continua de microservicios, documentación técnica y despliegue automatizado.
+
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-badge">SpringBoot</span>
+                                    <span class="skill-badge">Android Studio</span>
+                                    <span class="skill-badge">Docker</span>
+                                    <span class="skill-badge">TortoiseGit</span>
+                                    <span class="skill-badge">JWT</span>
+                                    <span class="skill-badge">Trabajo en equpo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="relative flex items-center md:flex-row-reverse">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8">
+                            <div class="card hover:shadow-lg transition-shadow">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-text-primary">Proyecto de Investigación</h3>
+                                        <p  class="text-success   font-medium">Centro de Investigación en Computación (CIC) – IPN</p>
+                                    </div>
+                                    <span class="text-sm text-text-secondary bg-secondary-100 px-3 py-1 rounded-full">Agosto 2024 - Noviembre 2024</span>
+                                </div>
+                                <p class="text-text-secondary mb-4">
+                                    Proyecto vinculado al CIC con excompañeros, orientado a la detección de depresión mediante análisis de texto.<br>Desarrollo de un chatbot para WhatsApp con Node.js para recolección automatizada de respuestas.<br>Implementación de un sistema de sincronización entre bases de datos MySQL y Firestore.<br>Creación y administración de encuestas para recopilación y análisis de datos.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-badge">Node.js</span>
+                                    <span class="skill-badge">MySQL</span>
+                                    <span class="skill-badge">Firesore Database</span>
+                                    <span class="skill-badge">SpringBoot</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="relative flex items-center">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-success rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8">
+                            <div class="card hover:shadow-lg transition-shadow">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-text-primary">Proyecto de Titulación</h3>
+                                        <p  class="text-accent font-medium">CECyT 9 - IPN</p>
+                                    </div>
+                                    <span class="text-sm text-text-secondary bg-secondary-100 px-3 py-1 rounded-full">Septiembre 2023 – Junio 2024</span>
+                                </div>
+                                <p class="text-text-secondary mb-4">
+                                    Ganadores del 15° Premio Nacional de Transporte Urbano y Movilidad 2024 de la ATMT en la categoría de Proyecto de Transporte y Movilidad Urbana.<br>Desarrollo de una aplicación móvil para optimizar la movilidad en la CDMX utilizando el algoritmo de Dijkstra para rutas óptimas.<br>Backend: Firebase (Realtime DB, Firestore, Authentication), Google Maps Directions API, Spring Boot, y MySQL.<br>Frontend: Diseño de interfaces con Material Design y Jetpack Compose para mejorar la experiencia del usuario.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-badge">(Firebase) RealTime DB</span>
+                                    <span class="skill-badge">(Firebase) Firesore</span>
+                                    <span class="skill-badge">(Firebase) Autentication</span>
+                                    <span class="skill-badge">(Firebase) RealTime Analitycs</span>
+                                    <span class="skill-badge">(Firebase) Performance</span>
+                                    <span class="skill-badge">(Firebase) Hosting</span>
+                                    <span class="skill-badge">(Firebase) CrashLytics</span>
+                                    <span class="skill-badge">Material Design & Simbols</span>
+                                    <span class="skill-badge">Jetpack Compose</span>
+                                    <span class="skill-badge">Google Maps Directions API</span>
+                                    <span class="skill-badge">SpringBoot</span>
+                                    <span class="skill-badge">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">Educación y Reconocimientos</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Trayectoria Academica y extra academica
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-text-primary mb-8">Educación</h3>
+                    <div class="space-y-6">
+                        <div class="card">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background-color: #ffffff;">
+                                    <svg style="color: #000000;" class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-semibold text-text-primary">Ingeniería en Inteligencia Artificial</h4>
+                                    <p class="text-primary text-warning  font-medium">ESCOM - Instituto Politécnico Nacional</p>
+                                    <p class="text-text-secondary text-sm">Febrero 2025 - Actualidad</p>
+                                    <p class="text-text-secondary mt-2">
+                                        Desarrollo de un artículo de investigación junto a cuatro compañeros y dos Maestros en Ciencias, titulado "Mi Transporte: A Route Optimization App for Integrated Mobility in Mexico City".<br>Segundo lugar en ExpoESCOM, en la academia de Física, con el desarrollo de un sistema inteligente para minimizar accidentes relacionados con ciclistas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="card">
+                            <div class="flex items-start space-x-4">
+                               <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background-color: #ffffff;">
+                                   <svg style="color: #000000;" class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-semibold text-text-primary">2<sup>da</sup> Escuela de Verano de Ciencias Cognitivo Computacionales Y Procesamiento del Lenguaje Natural</h4>
+                                    <p class="text-primary text-success  font-medium">Centro de Investigación en Computo - Instituto Politécnico Nacional</p>
+                                    <p class="text-text-secondary text-sm">22 al 26 de Julio 2024</p>
+                                    <p class="text-text-secondary mt-2">
+                                        Participación en los talleres: "Escuchando al cerebro (Bioseñales EEG)" y "Segmentación Semántica".<br>Modalidad presencial.<br>Enfoque en neurotecnología, visión por computadora y procesamiento del lenguaje natural.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                          <div class="card">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background-color: #ffffff;">
+
+                                    <svg class="w-6 h-6 text-primary" style="color: #000000;"  fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-semibold text-text-primary">Técnico en Programación</h4>
+                                   <p class="font-medium" style="color: #AE0BDB;">CECyT 9 - Instituto Politécnico Nacional</p>
+                                    <p class="text-text-secondary text-sm">Agosto 2021 – Junio 2024</p>
+                                    <p class="text-text-secondary mt-2">
+                                        Desarrollo del proyecto "Mi Transporte" junto a cinco compañeros, utilizando tecnologías como Android Studio, Firebase, y diseño de APIs REST.<br>Formación integral en el ciclo de vida del software, metodologías ágiles, ciberseguridad, desarrollo móvil y bases de datos.<br>Uso constante de tecnologías contemporáneas como GitHub, Docker, Firebase, MySQL y principios de arquitectura cliente-servidor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-text-primary mb-8">Reconocimientos</h3>
+                    <div class="space-y-6">
+                       
+
+                           <div class="card">
+                            <div class="flex items-start space-x-4" >
+                                <div class="w-12 h-12  rounded-lg flex items-center justify-center flex-shrink-0" style="background-color: #ffffff;">
+                                    <svg style="color: #000000;"  class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-semibold text-text-primary">Acceptance Letter</h4>
+                                    <p class="text-warning font-medium">Conferences and Workshops in Telematics and Computing WITCOM 2025</p>
+                                    <p class="text-text-secondary text-sm">Obtenido: Noviembre 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="flex items-start space-x-4">
+                                <div style="background-color: #ffffff;" class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg style="color: #000000;"  class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-semibold text-text-primary">Constancia por el Segundo Lugar en el 14<sup>avo</sup> Concurso de Aplicación de las Ciencias Básicas</h4>
+                                    <p class="text-success font-medium">Escuela Superior de Computo</p>
+                                    <p class="text-text-secondary text-sm">Obtenido: Junio 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+
+                         <div class="card">
+                            <div class="flex items-start space-x-4">
+                                <div style="background-color: #ffffff;" class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg style="color: #000000;"  class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-semibold text-text-primary">15° Premio Nacional de Transporte Urbano y Movilidad 2024, categoría de Proyecto de Transporte y Movilidad Urbana. </h4>
+                                    <p class="font-medium" style="color: #AE0BDB;">
+    Asociación Mexicana de Transporte y Movilidad
+</p>
+
+                                    <p class="text-text-secondary text-sm">Obtenido: Octubre 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Preview Section -->
+    <section id="articles" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">Articulos Publicados</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    La busqueda de soluciones nuevas a viejas problematicas
+                </p>
+            </div>
+
+         <div class="flex justify-center mb-12">
+            <article class="card hover:shadow-lg transition-all hover-lift max-w-2xl w-full">
+                    <div class="aspect-w-16 aspect-h-9 mb-4">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="React Performance Optimization" class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-2 text-sm text-text-secondary">
+                            <span>Noviembre 15, 2025</span>
+                            <span>•</span>
+                            <span>15 min lectura</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary hover:text-primary transition-colors">
+                            <a href="articles_blog.html">Mi Transporte: A Route Optimization App for Integrated Mobility in Mexico City</a>
+                        </h3>
+                        <p class="text-text-secondary">
+                            Presenta el desarrollo de una aplicación móvil diseñada para mejorar la movilidad urbana en la Ciudad de México. Utilizando el algoritmo de Dijkstra, la app calcula rutas óptimas considerando diferentes medios del Sistema de Movilidad Integrada. El proyecto integra tecnologías como Firebase, Google Maps Directions API, Spring Boot y MySQL, y se enfoca en ofrecer una experiencia eficiente y accesible para los usuarios mediante un diseño intuitivo con Jetpack Compose.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs bg-primary-100 text-primary px-2 py-1 rounded">Android</span>
+                                <span class="text-xs bg-accent-100 text-accent px-2 py-1 rounded">Teoría de Grafos</span>
+                                <span class="text-xs bg-primary-100 text-primary px-2 py-1 rounded">Firebase</span>
+                                    <span class="text-xs bg-accent-100 text-accent px-2 py-1 rounded">Movilidad Urbana</span>
+                            </div>
+                         </div>
+                    </div>
+                </article>             
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold text-text-primary mb-6">Mis contactos</h3>
+                    <p class="text-text-secondary mb-8 leading-relaxed">
+                        Estoy interesado en nuevas oportunidades y proyectos que me permitan mejorar mis hablidades y resolver nuevas problematicas, siempre desde un enfoque moderno con mi forma de ver las cosas.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-text-primary">Correo</p>
+                                <p class="text-text-secondary">quezada.venegas.carloivan@email.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-text-primary">Ubicación</p>
+                                <p class="text-text-secondary">Iztapalapa, CDMX</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mt-8">
+                        <p class="font-medium text-text-primary mb-4">Contactame a travez de:</p>
+                        <div class="flex space-x-4">
+                             <a href="https://www.linkedin.com/in/carlo-iv%C3%A1n-quezada-venegas-24440b305/" target="_blank">
+                                  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo" />
+                              </a>
+                             <a href="https://www.instagram.com/c4rloi/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
+                              </a>
+                              <a href="https://www.facebook.com/profile.php?id=100071200912413" target="_blank">
+                                <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/facebook/default.svg" width="52" height="40" alt="facebook logo"  />
+                              </a>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-semibold text-white  mb-4">Carlo Iván Quezada Venegas</h3>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Actualmente me desempeño como ingeniero de software, en la planeación y desarrollo de sistemas para Bersamed.
+                        <br>He publicado mi primer articulo de investigación en el 14<sup>th</sup> International Congress in Telematics & Computing.
+                        <br>Fuí asistente en la escuela de Verano de Ciencias Cognitivo Computacionales y Procesamiento del Lenguaje Natural.
+                
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/carlo-iv%C3%A1n-quezada-venegas-24440b305/" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/QVCI" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white  mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">Acerca de mi</a></li>
+                        <li><a href="#skills" class="text-gray-300 hover:text-white transition-colors">Habilidades y experiencia</a></li>
+                        <li><a href="#experience" class="text-gray-300 hover:text-white transition-colors">Experiencia laboral</a></li>
+                        <li><a href="project_showcase_detail.html" class="text-gray-300 hover:text-white transition-colors">Proyectos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white  mb-4">Recursos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="MiCV.pdf" class="text-gray-300 hover:text-white transition-colors">Mi CV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Quezada Venegas Carlo Iván. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Smooth Scrolling -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary');
+                link.classList.add('text-text-secondary');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-text-secondary');
+                    link.classList.add('text-primary');
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.card, .skill-badge').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
