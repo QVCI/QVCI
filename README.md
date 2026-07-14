@@ -96,12 +96,7 @@
   <a href="https://scholar.google.com/citations?user=lOR4JxkAAAAJ&hl=es" target="_blank">
       <img src="https://cdn.simpleicons.org/googlescholar/4285F4" width="40" height="40" alt="google scholar logo" />
   </a>
-  <a href="https://www.instagram.com/c4rloi/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=100071200912413" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/facebook/default.svg" width="52" height="40" alt="facebook logo"  />
-  </a>
+ 
 </div>
 
 <div align="center">
