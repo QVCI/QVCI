@@ -1,22 +1,319 @@
-<!-- rebuild -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <script>
-        // Redirect to the main portfolio landing page
-        window.location.href = 'pages/portfolio_landing_page.html';
-    </script>
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdeveloper9160back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carlo Iván Quezada Venegas</title>
+<style>
+  :root {
+    --accent: #2563eb;
+    --text: #1f2430;
+    --muted: #5b6472;
+    --border: #e4e7eb;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin: 0 0 4px;
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 1.02rem;
+    margin: 0;
+  }
+  #langToggle {
+    border: 1px solid var(--border);
+    background: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--text);
+    flex-shrink: 0;
+  }
+  #langToggle:hover { border-color: var(--accent); color: var(--accent); }
+  html { scroll-behavior: smooth; }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 0.9rem;
+    margin: 0 0 40px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--accent); }
+  section { margin-bottom: 40px; scroll-margin-top: 60px; }
+  h2 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin: 0 0 16px;
+  }
+  .entry { margin-bottom: 22px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .entry-title { font-weight: 600; font-size: 1rem; }
+  .entry-date { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
+  .entry-sub { font-style: italic; color: var(--muted); font-size: 0.9rem; margin: 2px 0 6px; }
+  ul.bullets { margin: 8px 0 0; padding-left: 18px; }
+  ul.bullets li { margin-bottom: 4px; font-size: 0.94rem; }
+  .skills-grid { display: grid; grid-template-columns: 140px 1fr; row-gap: 10px; font-size: 0.94rem; }
+  .skills-grid dt { font-weight: 600; }
+  .skills-grid dd { margin: 0; color: var(--text); }
+  .contact-list { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.94rem; }
+  .contact-list a { color: var(--accent); text-decoration: none; }
+  .contact-list a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  body.lang-es .en { display: none; }
+  body.lang-en .es { display: none; }
+</style>
 </head>
-<body>
-    <div class="redirect-container">
-        <h1>Direccionando al portafolio...</h1>
-        <p>Si algo falla, <a href="pages/portfolio_landing_page.html">presiona aquí</a>.</p>
+<body class="lang-es">
+<div class="wrap">
+
+  <header class="top">
+    <div>
+      <h1>Carlo Iván Quezada Venegas</h1>
+      <p class="tagline">
+        <span class="es">Estudiante de Ingeniería en IA · Backend Developer · Arquitectura de Software</span>
+        <span class="en">AI Engineering Student · Backend Developer · Software Architecture</span>
+      </p>
     </div>
-<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+    <button id="langToggle" onclick="toggleLang()">EN</button>
+  </header>
+
+  <nav>
+    <a href="#perfil"><span class="es">Perfil</span><span class="en">Profile</span></a>
+    <a href="#proyectos"><span class="es">Proyectos</span><span class="en">Projects</span></a>
+    <a href="#publicaciones"><span class="es">Publicaciones</span><span class="en">Publications</span></a>
+    <a href="#logros"><span class="es">Logros</span><span class="en">Achievements</span></a>
+    <a href="#habilidades"><span class="es">Habilidades</span><span class="en">Skills</span></a>
+    <a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
+  </nav>
+
+  <section id="perfil">
+    <h2><span class="es">Perfil</span><span class="en">Profile</span></h2>
+    <p class="es">Estudiante de Ingeniería en Inteligencia Artificial en la Escuela Superior de Cómputo (ESCOM-IPN), con formación previa como Técnico en Programación. Me especializo en desarrollo backend, arquitectura de software y modelado de bases de datos, con interés particular en inteligencia artificial aplicada y sistemas basados en grafos. He liderado el diseño técnico de proyectos académicos multidisciplinarios, participando en la definición de arquitecturas, desarrollo de APIs y construcción de soluciones orientadas a problemas reales. Busco oportunidades que me permitan fortalecer mi experiencia en ingeniería de software, investigación aplicada e inteligencia artificial.</p>
+    <p class="en">AI Engineering student at Escuela Superior de Cómputo (ESCOM-IPN), with a background as a Programming Technician. I specialize in backend development, software architecture, and database modeling, with a particular interest in applied AI and graph-based systems. I've led the technical design of multidisciplinary academic projects, defining architectures, building APIs, and delivering solutions for real-world problems. I'm looking for opportunities to grow in software engineering, applied research, and AI.</p>
+
+    <div class="entry" style="margin-top:20px;">
+      <div class="entry-head">
+        <span class="entry-title">Escuela Superior de Cómputo (ESCOM) — IPN</span>
+        <span class="entry-date">
+          <span class="es">Ago. 2024 – Actual</span><span class="en">Aug. 2024 – Present</span>
+        </span>
+      </div>
+      <div class="entry-sub">
+        <span class="es">Ingeniería en Inteligencia Artificial</span>
+        <span class="en">B.Eng. in Artificial Intelligence</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">CECyT 9 “Juan de Dios Bátiz” — IPN</span>
+        <span class="entry-date">2022 – 2024</span>
+      </div>
+      <div class="entry-sub">
+        <span class="es">Técnico en Programación</span>
+        <span class="en">Programming Technician</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2><span class="es">Proyectos Destacados</span><span class="en">Featured Projects</span></h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Sistema Inteligente de Movilidad Urbana</span>
+        <span class="entry-date"><span class="es">Marzo 2026 – Actual</span><span class="en">Mar. 2026 – Present</span></span>
+      </div>
+      <div class="entry-sub"><span class="es">Technical Lead &amp; Backend Developer</span><span class="en">Technical Lead &amp; Backend Developer</span></div>
+      <ul class="bullets">
+        <li class="es">Definición de la arquitectura técnica del sistema y toma de decisiones de diseño.</li>
+        <li class="en">Defined the system's technical architecture and made key design decisions.</li>
+        <li class="es">Modelado de una base de datos orientada a grafos con Neo4j (estaciones, conexiones y puntos de interés).</li>
+        <li class="en">Modeled a graph database with Neo4j (stations, connections, and points of interest).</li>
+        <li class="es">Backend con Spring Boot y diseño de APIs REST para la comunicación con la aplicación.</li>
+        <li class="en">Built the backend with Spring Boot and designed REST APIs for the app.</li>
+        <li class="es">Autenticación y autorización mediante Supabase.</li>
+        <li class="en">Implemented authentication and authorization with Supabase.</li>
+        <li class="es">Coordinación técnica de un equipo multidisciplinario de cuatro integrantes.</li>
+        <li class="en">Technical coordination of a four-person multidisciplinary team.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Mi Movilidad</span>
+        <span class="entry-date"><span class="es">Sep. 2023 – Ago. 2024</span><span class="en">Sep. 2023 – Aug. 2024</span></span>
+      </div>
+      <div class="entry-sub">Backend Developer &amp; Android Developer</div>
+      <ul class="bullets">
+        <li class="es">App Android para optimizar la movilidad urbana en la Ciudad de México mediante algoritmos de búsqueda de rutas.</li>
+        <li class="en">Android app to optimize urban mobility in Mexico City using route-search algorithms.</li>
+        <li class="es">Algoritmo de Dijkstra para calcular rutas óptimas entre estaciones del sistema de transporte.</li>
+        <li class="en">Implemented Dijkstra's algorithm to compute optimal routes between transit stations.</li>
+        <li class="es">Backend con Spring Boot; integración de MySQL, Firebase Realtime Database y Cloud Firestore.</li>
+        <li class="en">Spring Boot backend integrating MySQL, Firebase Realtime Database, and Cloud Firestore.</li>
+        <li class="es">Autenticación con Firebase e integración con la API de Google Maps Directions.</li>
+        <li class="en">Firebase Authentication and integration with the Google Maps Directions API.</li>
+        <li class="es"><strong>Proyecto ganador del 15.º Premio Nacional de Transporte Urbano y Movilidad 2024.</strong></li>
+        <li class="en"><strong>Winning project — 15th National Urban Transport and Mobility Award 2024.</strong></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Mental Health Research Chatbot</span>
+        <span class="entry-date"><span class="es">Ago. 2024 – Nov. 2024</span><span class="en">Aug. 2024 – Nov. 2024</span></span>
+      </div>
+      <div class="entry-sub">Backend Developer</div>
+      <ul class="bullets">
+        <li class="es">Chatbot para WhatsApp con Node.js, como parte de un proyecto de investigación con el CIC-IPN.</li>
+        <li class="en">WhatsApp chatbot built with Node.js, part of a research project with CIC-IPN.</li>
+        <li class="es">Sincronización de datos entre MySQL y Cloud Firestore para mantener la consistencia de la información.</li>
+        <li class="en">Data synchronization between MySQL and Cloud Firestore to keep data consistent.</li>
+        <li class="es">Herramientas para la creación y administración de encuestas de investigación.</li>
+        <li class="en">Tools for creating and managing research surveys.</li>
+        <li class="es">Colaboración en una plataforma de análisis para la detección temprana de depresión mediante datos textuales.</li>
+        <li class="en">Contributed to an analytics platform for early depression detection from text data.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="publicaciones">
+    <h2><span class="es">Publicaciones</span><span class="en">Publications</span></h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Mi Transporte: A Route Optimization App for Integrated Mobility in Mexico City</span>
+        <span class="entry-date">Oct. 2025</span>
+      </div>
+      <div class="entry-sub">International Congress of Telematics and Computing (Springer Nature Switzerland) — WITCOM 2025</div>
+      <p class="es" style="font-size:0.94rem; margin:6px 0 0;">Coautor de una publicación revisada por pares sobre una plataforma para la optimización de rutas en el Sistema de Movilidad Integrada de la Ciudad de México.</p>
+      <p class="en" style="font-size:0.94rem; margin:6px 0 0;">Co-author of a peer-reviewed paper on a route-optimization platform for Mexico City's Integrated Mobility System.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Scalable Multilayer Graph Architecture for Urban Transportation Systems</span>
+        <span class="entry-date"><span class="es">Enviado (WITCOM 2026)</span><span class="en">Submitted (WITCOM 2026)</span></span>
+      </div>
+      <div class="entry-sub">International Congress of Telematics and Computing</div>
+      <p class="es" style="font-size:0.94rem; margin:6px 0 0;">Coautor de un artículo que propone una arquitectura jerárquica multicapa basada en grafos, con un algoritmo de detección de transbordos que reduce la complejidad de O(N²) a O(N·K).</p>
+      <p class="en" style="font-size:0.94rem; margin:6px 0 0;">Co-author of a paper proposing a hierarchical multilayer graph architecture, with a transfer-detection algorithm that reduces complexity from O(N²) to O(N·K).</p>
+    </div>
+  </section>
+
+  <section id="logros">
+    <h2><span class="es">Logros</span><span class="en">Achievements</span></h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title"><span class="es">15.º Premio Nacional de Transporte Urbano y Movilidad</span><span class="en">15th National Urban Transport and Mobility Award</span></span>
+        <span class="entry-date">2024</span>
+      </div>
+      <div class="entry-sub">
+        <span class="es">Ganador nacional con el proyecto Mi Movilidad, desarrollado durante el CECyT.</span>
+        <span class="en">National winner with the Mi Movilidad project, developed during CECyT.</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title"><span class="es">2.º Lugar — Expo ESCOM</span><span class="en">2nd Place — Expo ESCOM</span></span>
+        <span class="entry-date">2025</span>
+      </div>
+      <div class="entry-sub">
+        <span class="es">Concurso de aplicación de las Ciencias Básicas, con el proyecto "Mobile Collision Control Kit Asistant".</span>
+        <span class="en">Applied Basic Sciences competition, with the "Mobile Collision Control Kit Asistant" project.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2><span class="es">Habilidades Técnicas</span><span class="en">Technical Skills</span></h2>
+    <dl class="skills-grid">
+      <dt><span class="es">Lenguajes</span><span class="en">Languages</span></dt>
+      <dd>Java, Python, C++, SQL, JavaScript</dd>
+      <dt><span class="es">Bases de datos</span><span class="en">Databases</span></dt>
+      <dd>MySQL, SQLite, Firestore, Neo4j</dd>
+      <dt>Frameworks</dt>
+      <dd>Spring Boot, Node.js</dd>
+      <dt><span class="es">Herramientas</span><span class="en">Tools</span></dt>
+      <dd>Git, Docker, Android Studio, Postman, NetBeans</dd>
+      <dt>Cloud</dt>
+      <dd>Vercel, Firebase, Supabase, Neo4j Aura</dd>
+    </dl>
+  </section>
+
+  <section id="contacto">
+    <h2><span class="es">Contacto</span><span class="en">Contact</span></h2>
+    <div class="contact-list">
+      <a href="mailto:carloivan2910@gmail.com">carloivan2910@gmail.com</a>
+      <a href="https://www.linkedin.com/in/carlo-iv%C3%A1n-quezada-venegas-24440b305/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/QVCI" target="_blank">GitHub</a>
+      <a href="https://orcid.org/0009-0007-7204-9072" target="_blank">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=lOR4JxkAAAAJ&hl=es" target="_blank">Google Scholar</a>
+    </div>
+  </section>
+
+  <footer>
+    <span class="es">Última actualización: julio 2026.</span>
+    <span class="en">Last updated: July 2026.</span>
+  </footer>
+
+</div>
+
+<script>
+  function toggleLang() {
+    const body = document.body;
+    const btn = document.getElementById('langToggle');
+    const toEnglish = body.classList.contains('lang-es');
+    body.classList.toggle('lang-es', !toEnglish);
+    body.classList.toggle('lang-en', toEnglish);
+    document.documentElement.lang = toEnglish ? 'en' : 'es';
+    btn.textContent = toEnglish ? 'ES' : 'EN';
+  }
+</script>
+
 </body>
 </html>
